@@ -8,9 +8,6 @@ engines:
         enabled: true
     markdownlint:
         enabled: true
-    stylelint:
-        enabled: true
-        channel: "beta"
 ratings:
     paths:
         - "**.js"
