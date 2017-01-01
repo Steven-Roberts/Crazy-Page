@@ -1,0 +1,8 @@
+env:
+    webextensions: true
+    browser: true
+parserOptions:
+    sourceType: module
+extends: eslint-config-steven-roberts
+rules:
+    no-alert: off

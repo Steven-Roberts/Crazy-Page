@@ -1,0 +1,41 @@
+html {
+    animation: colorize 1s infinite linear !important;
+}
+
+body {
+    background:
+        linear-gradient(
+            to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet
+        ) !important;
+}
+
+img {
+    animation: hue 3.1s infinite linear !important;
+}
+
+@keyframes colorize {
+    from {
+        filter: saturate(100000000000%);
+    }
+
+    to {
+        filter: saturate(100000100000%);
+    }
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}

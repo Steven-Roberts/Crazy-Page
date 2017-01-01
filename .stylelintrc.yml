@@ -1,0 +1,6 @@
+extends: stylelint-config-steven-roberts
+rules:
+    # Need to override default CSS
+    declaration-no-important: null
+    # Only Chrome needs to be supported
+    no-unsupported-browser-features: null
