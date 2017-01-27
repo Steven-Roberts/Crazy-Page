@@ -1,7 +1,6 @@
 const executeScripts = () => {
     chrome.tabs.executeScript({
         file: 'animations.js',
-        allFrames: true,
         matchAboutBlank: true,
         runAt: 'document_end'
     });
