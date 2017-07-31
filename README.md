@@ -2,6 +2,7 @@
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/d/kfieapkahkkhclonobinbonddbfkpbck.svg)](https://chrome.google.com/webstore/detail/crazy-page/kfieapkahkkhclonobinbonddbfkpbck)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/kfieapkahkkhclonobinbonddbfkpbck.svg)](https://chrome.google.com/webstore/detail/crazy-page/kfieapkahkkhclonobinbonddbfkpbck/reviews)
+[![devDependencies Status](https://david-dm.org/Steven-Roberts/Crazy-Page/dev-status.svg)](https://david-dm.org/Steven-Roberts/Crazy-Page?type=dev)
 [![Build Status](https://travis-ci.org/Steven-Roberts/Crazy-Page.svg?branch=master)](https://travis-ci.org/Steven-Roberts/Crazy-Page)
 [![Code Climate](https://codeclimate.com/github/Steven-Roberts/Crazy-Page/badges/gpa.svg)](https://codeclimate.com/github/Steven-Roberts/Crazy-Page)
 

@@ -11,10 +11,12 @@ export const createLintCss = (failAfterError = true) => {
     const lintCss = () => gulp.src(globs.css)
         .pipe(stylelint({
             failAfterError,
-            reporters: [{
-                formatter: 'string',
-                console: true
-            }]
+            reporters: [
+                {
+                    formatter: 'string',
+                    console: true
+                }
+            ]
         }));
 
     return lintCss;
