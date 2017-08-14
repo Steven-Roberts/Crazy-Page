@@ -1,5 +1,7 @@
 html {
-    animation: colorize 1s infinite linear !important;
+    animation:
+        colorize 2s infinite linear,
+        spin 0.8s infinite linear !important;
 }
 
 body {
@@ -37,5 +39,43 @@ img {
 
     to {
         filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        cursor: n-resize;
+    }
+
+    12.5% {
+        cursor: ne-resize;
+    }
+
+    25% {
+        cursor: e-resize;
+    }
+
+    37.5% {
+        cursor: se-resize;
+    }
+
+    50% {
+        cursor: s-resize;
+    }
+
+    62.5% {
+        cursor: sw-resize;
+    }
+
+    75% {
+        cursor: w-resize;
+    }
+
+    87.5% {
+        cursor: nw-resize;
+    }
+
+    100% {
+        cursor: n-resize;
     }
 }
