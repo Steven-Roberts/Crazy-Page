@@ -9,4 +9,4 @@ export const buildJson = () => gulp.src(globs.json)
     .pipe(gulp.dest(paths.build));
 
 export const watchJson = (watchOptions) =>
-    gulp.watch(globs.css, watchOptions, buildJson);
+    gulp.watch(globs.json, watchOptions, buildJson);
