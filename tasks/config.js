@@ -11,7 +11,6 @@ export const paths = {
 const srcGlob = (ext = '*') => `${paths.src}/**/${ext}`;
 
 export const globs = {
-    img: [srcGlob('*.{png,jpg,gif,svg}')],
     json: [srcGlob('*.json')],
     js: [srcGlob('*.js')],
     gulp: ['gulpfile.babel.js', 'tasks/**/*'],

@@ -15,5 +15,6 @@ if (cssTag) {
         .insertBefore(document.createElement('head'), document.body);
 
     head.appendChild(
-        Object.assign(document.createElement('link'), cssTagOptions));
+        Object.assign(document.createElement('link'), cssTagOptions)
+    );
 }

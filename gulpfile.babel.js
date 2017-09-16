@@ -1,8 +1,8 @@
 import {buildCss, createLintCss, watchCss} from './tasks/css';
-import {buildImg, iconify, watchImg} from './tasks/img';
 import {buildJs, createLintJs, watchJs} from './tasks/js';
 import {buildJson, watchJson} from './tasks/json';
 import {globs, paths, watchOptions} from './tasks/config.js';
+import {iconify, watchIcon} from './tasks/icon';
 
 import {access} from 'fs';
 import del from 'del';
@@ -19,7 +19,7 @@ const clean = () => del(paths.build);
 const lint = gulp.parallel(createLintCss(), createLintJs());
 
 const build = gulp.series(clean, lint,
-    gulp.parallel(buildCss, buildImg, iconify, buildJs, buildJson));
+    gulp.parallel(buildCss, iconify, buildJs, buildJson));
 
 const checkVersion = () => util
     .promisify(access)(join(paths.release, zipFileName))
@@ -36,7 +36,7 @@ const release = gulp.series(build, checkVersion, zip);
 
 const watcher = () => {
     watchCss(watchOptions);
-    watchImg(watchOptions);
+    watchIcon(watchOptions);
     watchJs(watchOptions);
     watchJson(watchOptions);
 };
