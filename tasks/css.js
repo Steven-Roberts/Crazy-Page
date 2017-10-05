@@ -6,7 +6,7 @@ import gulp from 'gulp';
 import {production} from 'gulp-environments';
 import stylelint from 'gulp-stylelint';
 
-export const createLintCss = (failAfterError = true) => {
+const createLintCss = (failAfterError = true) => {
     const lintCss = () => gulp.src(globs.css)
         .pipe(stylelint({
             failAfterError,
@@ -21,10 +21,12 @@ export const createLintCss = (failAfterError = true) => {
     return lintCss;
 };
 
-export const buildCss = () => gulp.src(globs.css)
+const buildCss = () => gulp.src(globs.css)
     .pipe(autoprefixer(browserlistOptions))
     .pipe(production(cssnano()))
     .pipe(gulp.dest(paths.build));
 
-export const watchCss = (watchOptions) => gulp.watch(globs.css, watchOptions,
+const watchCss = (watchOptions) => gulp.watch(globs.css, watchOptions,
     gulp.series(createLintCss(false), buildCss));
+
+export {createLintCss, buildCss, watchCss};

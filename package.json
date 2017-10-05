@@ -8,9 +8,6 @@
   "bugs": {
     "url": "https://github.com/Steven-Roberts/Crazy-Page/issues"
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
