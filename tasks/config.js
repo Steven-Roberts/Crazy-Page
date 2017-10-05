@@ -1,3 +1,5 @@
+import manifest from '../src/manifest';
+
 const src = 'src';
 
 export const paths = {
@@ -20,4 +22,8 @@ export const globs = {
 
 export const watchOptions = {
     ignoreInitial: false
+};
+
+export const browserlistOptions = {
+    browsers: [`Chrome >= ${manifest.minimum_chrome_version}`]
 };
