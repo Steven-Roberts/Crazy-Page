@@ -21,7 +21,7 @@
     "gulp-environments": "^0.1.1",
     "gulp-eslint": "^4.0.0",
     "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^3.1.1",
+    "gulp-imagemin": "^4.0.0",
     "gulp-jsonminify": "^1.0.0",
     "gulp-stylelint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
